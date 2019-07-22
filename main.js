@@ -43,10 +43,12 @@ function biggify(event) {
   
   // TODO: Find the input box the user is typing in and put the DOM node in a variable.
   // Make sure you're using the right selector!
+  const userInput = document.querySelector('.user-input');
   
   // TODO: Use the variable you saved in the above step to dive deeper into the
   // object and find the value the user has added there. Save it to a variable.
-  
+  const userValue = userInput.value
+  console.log(userValue)
   
   /*
   TODO: Add 9000 to the user's number.
@@ -59,6 +61,9 @@ function biggify(event) {
   Essentially, you can use `printValue` the same way you would `console.log`,
   only it will write to the DOM instead of to the console.
   */
+const nineThou = 9000;
+const biggifyValue = +userValue + nineThou;
+console.log(biggifyValue);
 
 
 
@@ -81,20 +86,22 @@ function nasafy(event) {
   /*
     TODO: Call the function `clearList`, which we have defined for you.
   */
-
+clearList()
   
   // TODO: Find the input box the user is typing in and put the DOM node in a variable.
+const nasafy = document.querySelector('.user-input')
 
   
   // TODO: Use the variable you saved in the above step to dive deeper into the
   // object and find the value the user has added there. Save it to a variable.
-
+const nasafyValue = nasafy.value
   /*
     TODO: Print every value from the user's number down to (and including) the number 1. Then print "Blastoff!".
     
     Use the pre-defined `printValue` function below to print out each line,
     giving it the value you want to print.
   */
+ 
 
 
 
