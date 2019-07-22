@@ -102,11 +102,13 @@ const nasafyValue = nasafy.value
     giving it the value you want to print.
   */
 
-i = nasafyValue - 1;
+i = nasafyValue;
 while(0 < i){
   printValue(i)
   i = i - 1;
 }
+
+printValue('Blastoff!')
 
 
 
