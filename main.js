@@ -1,30 +1,30 @@
 // TODO: Find the biggify numbers button on our page.
-const biggifyNumbersButton = document.querySelector('');
+const biggifyNumbersButton = document.querySelector('.big');
 //When it's clicked, launch `biggify`.
 biggifyNumbersButton.onclick = biggify;
 
 // TODO: Find the biggify numbers button on our page.
-const nasafyButton = document.querySelector('');
+const nasafyButton = document.querySelector('.blastoff');
 //When it's clicked, launch `biggify`.
 nasafyButton.onclick = nasafy;
 
 // TODO: Find the crazify string button on our page.
-const crazifyStringButton = document.querySelector('');
+const crazifyStringButton = document.querySelector('.crazy');
 //When it's clicked, launch `stringify`.
 crazifyStringButton.onclick = crazify;
 
 // TODO: Find the reverse string button on our page.
-const reverseStringButton = document.querySelector('');
+const reverseStringButton = document.querySelector('.reverse');
 //When it's clicked, launch `reverse`.
 reverseStringButton.onclick = reverse;
 
 // TODO: Find the lucky numbers button on our page.
-const luckyNumbersButton = document.querySelector('');
+const luckyNumbersButton = document.querySelector('.lucky');
 //When it's clicked, launch `luckify`.
 luckyNumbersButton.onclick = luckify;
 
 // TODO: Find the lucky numbers button on our page.
-const titleCaseButton = document.querySelector('');
+const titleCaseButton = document.querySelector('.titlec');
 //When it's clicked, launch `titleify`.
 titleCaseButton.onclick = titleify;
 
@@ -34,10 +34,12 @@ function biggify(event) {
   event.preventDefault();
 
   /*
-  TODO: Call the function `clearList`, which we have defined for you. You
+  Call the function `clearList`, which we have defined for you. You
   don't need to put anything in the parentheses to tell it what to clear, just
   call it--it knows what to do!
   */
+
+  clearList();
   
   // TODO: Find the input box the user is typing in and put the DOM node in a variable.
   // Make sure you're using the right selector!
