@@ -51,7 +51,7 @@ function biggify(event) {
   console.log(userValue)
   
   /*
-  TODO: Add 9000 to the user's number.
+  Add 9000 to the user's number.
   
   A hint: if this isn't working, it _might_ be because of the JavaScript type of the data coming in.
   
@@ -63,7 +63,7 @@ function biggify(event) {
   */
 const nineThou = 9000;
 const biggifyValue = +userValue + nineThou;
-console.log(biggifyValue);
+printValue(biggifyValue);
 
 
 
@@ -101,7 +101,14 @@ const nasafyValue = nasafy.value
     Use the pre-defined `printValue` function below to print out each line,
     giving it the value you want to print.
   */
- 
+
+i = nasafyValue - 1;
+while(0 < i){
+  printValue(i)
+  i = i - 1;
+}
+
+
 
 
 
@@ -119,14 +126,14 @@ function crazify(event) {
   /*
   TODO: Call the function `clearList`, which we have defined for you.
   */
-
+clearList()
   
  // TODO: Find the input box the user is typing in and put the DOM node in a variable.
 
-  
+  const crazify = document.querySelector('.user-input')
   // TODO: Use the variable you saved in the above step to dive deeper into the
   // object and find the value the user has added there. Save it to a variable.
-  
+  const crazifyValue = crazify.value;
 
   /*
     TODO: Loop through and capitalize every even-numbered character. That is, if the user's string is 7 characters long, the 2nd, 4th, and 6th characters should all be capitalized.
@@ -137,6 +144,17 @@ function crazify(event) {
     giving it the value you want to print.
   */
   
+ i = 1
+ while(i <= crazifyValue.length){
+   if(i % 2 ===0){
+     printValue(crazifyValue.toUpperCase())
+   } else{
+     printValue([crazifyValue])
+   }
+   i = i + 1;
+ } 
+
+
 
   /*
     Stretch goal TODOS:
@@ -161,9 +179,11 @@ function reverse(event) {
   /*
     TODO: Call the function `clearList`, which we have defined for you.
   */
-  
+  clearList()
   // TODO: Find the input box the user is typing in and put the DOM node in a variable.
+const reverseFunction = document.querySelector('.user-input')
 
+const reverseVariable = reverseFunction.value;
 
   // TODO: Use the variable you saved in the above step to dive deeper into the
   // object and find the value the user has added there. Save it to a variable.
